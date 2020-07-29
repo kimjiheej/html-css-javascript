@@ -1,0 +1,60 @@
+HTML5와 입력 양식 요소 
+입력폼 
+폼태그 
+action: 사용자가 입력한 데이터를 받아 처리하기 위한 웹 프로그램의 페이지를 지정함 
+method: get 방식과 post 방식중 하나를 선택 
+type: 폼의 모양과 기능을 결정함 
+name: 폼의 이름을 결정함 
+get방식 
+url뒤에 파라미터를 붙여서 데이터를 전달하는 방식 
+- but, 보안에 취약함 
+post방식 
+url뒤에 http request헤어데 따라 데이터를 전송하는 방식 
+get방식보다 보안이 뛰어남 
+입력 양식 태그 
+1. 제출/초기화 방식 
+초기화: reset 
+2.텍스트/비밀번호 입력 양식 
+required입력 폼에 반드시 데이터를 입력하도록 요구하는 속성임
+3.텍스트 공간 입력/필드셋 양식 
+textarea: 텍스트 입력하는 곳  ex)<textarea rows="5" cols="50">
+4. fieldset 
+<legend>로 그룹명 지정 
+5.라디오/체크박스/버튼 양식 
+라디오 입력 양식은 여러 항목 중 하나만 선택할 때 사용됨 
+<input>태그의 name속성을 동일하게 설정해주기 
+checked: 선택
+체크박스 양식은 사용자가 동시에 여러 항목을 선택할 때 사용됨. 
+모둔 항목의 name속성은 동일하게 설정해주기 
+6.선택 목록 양식 
+select 펼침 목록에서 한 가지만 선택할 수 있도록 지원하는 양식임. 
+<select><option>태그를 사용 
+<option value="2">javascript</option>
+선택 목록 중 여러 개를 선택하려면, multiple 속성 이용하기 
+선택할 항목이 너무 많은 경우 <optgroud>태그 이용하기 
+<label 속성은 각 그룹에 제목을 지정하는 역할을 함>
+<datalist>태그는 텍스트 입력 시 자동완성 기능을 제공하는 것과 같은 효과를 냄.
+7.날짜와 시간 양식 
+<input type="date">: 년-월-일 단위로 원하는 날짜를 입력할 수 있다. 
+min ~ max 도 사용 가능 ! 
+8.색상 선택/숫자 입력/ 범위 지정 양식 
+<input type="color"> - 원하는 색상 지정
+<input type ="number"> - 숫자 입력 
+<input type = "range"> - 특정 범위에서 숫자 선택하기 
+9.이메일/url/검색어 입력 양식 
+이메일: <input type="email">
+url: <input type="url">
+입력양식: <input type="search">
+10.막대 그래프 양식 
+<meter>태그 사용 
+범위: 0.0~1.0 - 실숫값을 사용하거나 백분율로 나타냄 
+value 값이 안정적인 범위 내에 있으면 녹색, 그렇지 않으면 단계적으로 노란색과 빨간색으로 자동 표시됨.
+입력 양식의 주요 속성 
+읽기 전용 속성: readonly 
+비활성화 속성: disabled
+자동 완성 속성: autocomplete
+자동 포커스 속성: autofocus
+플레이스 홀더 속성: placeholder
+필수 입력 속성: required
+오타 체크 속성: spellcheck
+

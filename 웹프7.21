@@ -1,0 +1,40 @@
+박스 모델 
+content: 실제 내용이 표현되는 곳 
+padding: 콘텐츠와 테두리 사이의 여백(안쪽 여백이라고도 함)
+border: 박스의 테두리 두께 
+margin: 테두리와 박스의 최종 경계 사이의 여백(바깥쪽 여백이라고도 함)
+박스의 크기 설정 
+1. content 
+width, height 속성을 이용하여 지정함 
+속성값: value, min,max,low,high
+2. padding,margin 
+속성값: 수치(px,pt,cm)
+백분율: 백분율로 지정
+auto: 웹 브라우저가 자동으로 지정함
+
+가로.세로.위.아래 적용 방법 
+ex) h1{ margin: 5px 10px 5px 10px;}
+이라고 하면, top,right,bottom,left 
+    h1{ margin: 5px 10px 5px;}
+	top,right&left,bottom
+	h1 { margin: 5px 10px;}
+	top&bottom, right&left
+	h1 {margin: 5px;} 
+	top & right & bottom & left
+3. border 
+ 수치: px,pt,cm 사용가능 
+ 스타일: border- style속성을 이용하여 지정 
+ none: 테두리가 나타나지 않는다. 기본값이다.
+ double: 테두리를 이중선으로 지정한다 
+ hidden: 테두리를 감춘다 
+ groove: 테두리를 오목한 선으로 지정한다 
+ dotted: 테두리를 점선으로 지정한다 
+ dashed: 테두리를 파선으로 지정한다 
+ solid: 테두리를 실선으로 지정한다 
+ ridge: 테두리를 볼론한 선으로 지정한다 
+ inset: 테두리의 안쪽이 오목한 선으로 지정한다 
+ outset: 테두리의 안쪽인 볼록한 선으로 지정한다 
+테두리의 두께, 색상, 스타일은 묶어서 표현가능 
+ ex) p{ border: solid 2px green;}
+상하좌우에 각각 다른 속성을 적용하려면 
+border-top, border-right, border-bottom, border-left

@@ -1,0 +1,42 @@
+2차원 변환 함수 
+translate() 평행 이동 변환 
+rotate() 회전 변환 
+scale() 크기 변환 
+skewX() X축 기울기 변환 
+skewY() Y축 기울기 변환 
+skew() X축 Y축 기울기 변환 
+matrix() 2차원 행렬 구조 변환 
+평행 이동 변환 
+평행 이동 변환 함수는 요소를 지정한 거리만큼 이동시킨다. 
+ex) transform: translate(100px,50px);
+회전 변환 
+회전 변환 함수는 요소를 지정한 각도만큼 회전시킨다. 지정한 각도가 양수이면 시계방향, 음수이면 시계 반대 방향 
+ex) transform: rotate(45deg);
+크기 변환 
+크기 변환 함수는 요소를 지정한 값만큼 확대 또는 축소한다. 
+ex) transform: scale(0.5,0.5);
+기울기 변환 
+기울기 변환 함수는 요소를 지정한 각도만큼 x축 혹은 y축으로 기울임. 
+기울기는 x와 y축 동시에 적용 가능 
+ex) transform: skewX(50deg);
+    transform: skewY(50deg);
+2차원 행렬 구조 변환 
+2차원 행렬 구조 변환 함수는 크기, 기울기, 평행이동 함수의 매개변수 값을 동시에 지정가능. 
+ex) transform: matrix(1,0,0,1,100,0);
+혼합 변환 
+ex) transform: rotate(45deg) scale(1.5) skw(30deg) translate(50px);
+3차원 변환 효과 
+perspective(depth)
+translate3d(x,y,z)
+translateX(x)
+translateY(y)
+translateZ(z)
+scale3d(x,y,z)
+scaleX(x)
+scaleY(y)
+scaleZ(z)
+rotate3d(x,y,z,angle)
+rotateX(angle)
+rotateY(angle)
+rotateZ(angle)
+ex) transform: perspective(500px) rotateY(50deg) rotateX(0deg)
